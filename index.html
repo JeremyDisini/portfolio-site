@@ -113,7 +113,7 @@
 		<div class="CollapsibleSection">
 			<div class="ProjectHeaderInfo base">
 				<h3 style="text-align:left; width:30%;">Gameplay, Graphics, and Tools Programmer, Sound Designer</h3>
-				<h3 style="text-align:right;">August 2024 - August 2024</h3>
+				<h3 style="text-align:right;">August 2023 - August 2024</h3>
 			</div>
 			<div class="Content base">
 				<p>
@@ -212,6 +212,78 @@
 			</div>
 		</div>
 
+		<!-- The Maddening Mercy -->
+		<button class="base ProjectHeader Collapsible">
+			<h1>The Maddening Mercy</h1>
+		</button>
+		<div class="CollapsibleSection">
+			<div class="ProjectHeaderInfo base">
+				<h3 style="text-align:left; width:30%;">Gameplay, Tools, and Narrative Programmer, Sound Designer</h3>
+				<h3 style="text-align:right;">August 2025 - April 2026</h3>
+			</div>
+			<div class="Content base">
+				<p>
+					The Maddening Mercy is a western-themed murder mystery game starring a psychic marshal who probes into people's minds 
+					to find the culprit behind a murder in the small town of Toothwood. The game features both point-and-click 
+					adventure-styled investigation sequences and frenetic bullet-hell-styled psychic confrontations with suspects.
+					<br><br>
+					I spent much of my time in this project working on the backend for the point-and-click investigation side of the game,
+					as well as implementing many features and editor tools to enhance the game's visual novel style story presentation.
+				</p>
+				<div class="MultiImageContainer">
+					<img src="images/tmm_1.png">
+					<img src="images/tmm_3.png">
+				</div>
+				<p>
+					My biggest contribution to this project was what I called the Story Sequence System. With the help of some UI 
+					components courtesy of another programmer on the team, I created an event based dialogue system that could trigger 
+					dialogue, play sound effects, and affect game state (e.g. saving variables to a save file or adding items to the 
+					player's inventory) all by reading a modular sequence of scriptable objects. <br><br>
+					This system also supported branching dialogue choices, which our designers made liberal use of throughout the game 
+					to enhance player agency.
+				</p>
+	
+				<div class="MultiImageContainer">
+					<img src="images/tmm_2.png">
+					<img src="images/tmm_4.png">
+				</div>
+				<p>
+					In order to allow designers to properly interface with this system, I created a custom inspector in Unity that allowed
+					designers to edit Story Sequences and create different Story Sequence Events (e.g. a dialogue trigger or a branching choice)
+					from within a single interface.
+					<br><br>
+					This editor became the backbone of our project, with designers spending many hours within it authoring content and managing
+					the overall game flow. I iterated on this editor throughout development, constantly adding new features and different event
+					types to match the ever increasing needs of our narrative. 
+				</p>
+				<div class="CenteredImageContainer">
+					<img src="images/tmm_editor.gif">
+				</div>
+				<div class="InlineFlex">
+					<p>
+						Later on in the project, it was determined that game feel needed to be improved during long stretches of dialogue so 
+						as to mantain player engagement. To solve this, I added support for different visual effects such as screen shake, 
+						screen flashes, and vignettes from within dialogue.
+						<br><br>
+						These effects were handled by calling commands in the middle of dialogue 
+						with specific syntax, giving designers full control of the timing of these effects relative to specific sections of a passage. 
+						I also added support for adjustable parameters for each of these effect (e.g. flash color and duration) to add more flexibility.
+						In an effort to make the experience as seamless as possible, I took inspiration from tools like Twine and Yarn Spinner 
+						which our designers were already familiar with. 
+						<br><br>
+						In order to keep designers up to speed with this system, I also created and mantained comprehensive documentation for the interface.
+					</p>
+					<img src="images/tmm_5.png">
+				</div>
+				<p>
+					In the end, this system resulted in a much more dynamic reading experience than what was present before.
+				</p>
+				<div class="CenteredImageContainer">
+					<img src="images/tmm_dialogue_ux.gif">
+				</div>
+			</div>
+		</div>
+
 		<!-- The Children Are Sleeping -->
 		<button class="base ProjectHeader Collapsible">
 			<h1>The Children Are Sleeping</h1>
@@ -227,10 +299,10 @@
 					The Children Are Sleeping is a 3rd person stealth horror game about a kid escaping a nightmare while 
 					being chased by a horse-like monster and grappling with the trauma of losing her father in war. 
 					<br><br> 
-					This game was developed in Unreal Engine 5. This project is more narrative driven than most of my 
-					previous team efforts, so many decisions end up being made by art and design, with tech having to 
-					adjust more to the ever changing requirements. As such, a lot of my time was spent figuring out ways 
-					to better support the needs and ambitions of our design team.
+					This game was developed in Unreal Engine 5. This project leans more on its narrative, 
+					so many decisions ended up being made by art and design, with tech having to constantly 
+					adjust to the ever changing requirements. As such, a lot of my time was spent figuring 
+					out ways to better support the needs and ambitions of our design team.
 				</p>
 				<div class="IframeContainer">
 					<div class="IframeScaler">
@@ -573,7 +645,7 @@
 
 	<!-- Footer -->
 	<div class="Footer">
-		<p>© 2025 Jesus Roman S. Disini</p>
+		<p>© 2026 Jesus Roman S. Disini</p>
 	</div>
 
 	<script>
